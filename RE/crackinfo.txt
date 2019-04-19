@@ -1,0 +1,79 @@
+CRACKED_MOTO.EXE:00444E67                 call    check_drivetypes
+CRACKED_MOTO.EXE:00444E6C                 call    sub_442740
+CRACKED_MOTO.EXE:00444E71                 test    eax, eax
+CRACKED_MOTO.EXE:00444E73                   jz      short loc_444ECF   drive check
+CRACKED_MOTO.EXE:00444E75                 push    offset unk_540488
+CRACKED_MOTO.EXE:00444E7A                 mov     ecx, ds:off_503528
+CRACKED_MOTO.EXE:00444E80                 push    9
+CRACKED_MOTO.EXE:00444E82                 call    near ptr unk_4B1830
+
+
+
+.00442761: 7522                           jnz        .000442785 --?1
+.00442763: E8980E0700                     call       .0004B3600 --?2
+.00442768: 83C801                         or          eax,1
+.0044276B: A3B8904E00                     mov         [0004E90B8],eax --?3
+.00442770: A3B4904E00                     mov         [0004E90B4],eax --?4
+.00442775: 740E                           jz         .000442785 --?1
+.00442777: 85F6                           test        esi,esi
+.00442779: 750A                           jnz        .000442785 --?1
+.0044277B: B801000000                    5mov         eax,1
+.00442780: 5E                             pop         esi
+.00442781: 83C404                         add         esp,4
+.00442784: C3                             retn ; -^-^-^-^-^-^-^-^-^-^-^-^-^-^-
+.00442785: EBF4                          1   jmps       .00044277B --?5
+.00442787: 5E                             pop         esi
+.00442788: 83C404                         add         esp,4
+.0044278B: C3                             retn ; -^-^-^-^-^-^-^-^-^-^-^-^-^-^-
+.0044278C: CCCCCCCC                       int         3
+.00442790: 83EC08                         sub         esp,8
+.00442793: 8B0DC0C04D00                   mov         ecx,[0004DC0C0] --?6
+.00442799: 53                             push        ebx
+.0044279A: 56                             push        esi
+.0044279B: 57                             push        edi
+
+
+
+
+.text:0040C37B 0F 85 AC 00 00 00                       jnz     loc_40C42D
+.text:0040C381 A1 98 FC 4D 00                          mov     eax, dword_4DFC98
+.text:0040C386 8B 0D 94 FC 4D 00                       mov     ecx, dword_4DFC94
+.text:0040C38C 3B C8                                   cmp     ecx, eax
+.text:0040C38E 0F 84 99 00 00 00                       jz      loc_40C42D
+.text:0040C394 C7 44 24 50 49 4F 4E 00                 mov     [esp+60h+var_10], offset unk_4E4F49
+.text:0040C39C C7 44 24 4C 56 45 52 53                 mov     [esp+60h+var_14], 'SREV'
+.text:0040C3A4 C7 44 24 44 49 4C 4C 45                 mov     dword ptr [esp+60h+Source], 'ELLI'
+.text:0040C3AC C7 44 24 48 47 41 4C 20                 mov     [esp+60h+var_18], ' LAG'
+.text:0040C3B4 C7 44 24 34 00 00 00 00                 mov     [esp+60h+var_2C], 0
+.text:0040C3BC C7 44 24 38 00 00 00 00                 mov     [esp+60h+var_28], 0
+.text:0040C3C4 C7 44 24 3C 00 00 00 00                 mov     [esp+60h+var_24], 0
+.text:0040C3CC C7 44 24 40 00 00 00 00                 mov     [esp+60h+var_20], 0
+.text:0040C3D4 68 F0 63 4D 00                          push    offset unk_4D63F0 ; int
+.text:0040C3D9 68 00 64 4D 00                          push    offset unk_4D6400 ; int
+.text:0040C3DE 8B 44 24 3C                             mov     eax, [esp+68h+var_2C]
+.text:0040C3E2 6A 01                                   push    1               ; int
+.text:0040C3E4 8B 4C 24 44                             mov     ecx, [esp+6Ch+var_28]
+.text:0040C3E8 6A 00                                   push    0               ; int
+
+CRACKED_MOTO.EXE:0047E8C6                 test    eax, eax
+CRACKED_MOTO.EXE:0047E8C8                 jnz     loc_47E97A
+CRACKED_MOTO.EXE:0047E8CE                 mov     eax, ds:dword_4E90B4
+CRACKED_MOTO.EXE:0047E8D3                 mov     ecx, ds:dword_4E90B8
+CRACKED_MOTO.EXE:0047E8D9                 cmp     ecx, eax
+CRACKED_MOTO.EXE:0047E8DB                 jz      loc_47E97A
+CRACKED_MOTO.EXE:0047E8E1                 mov     dword ptr [esp+50h], 'NOI'
+CRACKED_MOTO.EXE:0047E8E9                 mov     dword ptr [esp+4Ch], 'SREV'
+CRACKED_MOTO.EXE:0047E8F1                 mov     dword ptr [esp+44h], 'ELLI'
+CRACKED_MOTO.EXE:0047E8F9                 mov     dword ptr [esp+48h], ' LAG'
+CRACKED_MOTO.EXE:0047E901                 mov     dword ptr [esp+34h], 0
+
+
+
+
+final audio CD check
+.text:00442F3A                 mov     eax, nIDEvent
+.text:00442F3F                 mov     ecx, [eax+8]
+.text:00442F42                 test    ecx, ecx
+.text:00442F44                 jz      short loc_442ED7
+.text:00442F46                 jmp     short loc_442F50
+.text:00442F48 ; ----------------------------------------------------------------------

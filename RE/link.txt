@@ -1,0 +1,17 @@
+test.obj
+
+e:\DEV\MSVC_Projects\disasm_exe\VS2005\pe_disasm\libs\ADVAPI32.LIB
+e:\DEV\MSVC_Projects\disasm_exe\VS2005\pe_disasm\libs\COMCTL32.LIB
+e:\DEV\MSVC_Projects\disasm_exe\VS2005\pe_disasm\libs\COMDLG32.LIB
+e:\DEV\MSVC_Projects\disasm_exe\VS2005\pe_disasm\libs\DDRAW.LIB
+e:\DEV\MSVC_Projects\disasm_exe\VS2005\pe_disasm\libs\DPLAYX.LIB
+e:\DEV\MSVC_Projects\disasm_exe\VS2005\pe_disasm\libs\DSOUND.LIB
+e:\DEV\MSVC_Projects\disasm_exe\VS2005\pe_disasm\libs\GDI32.LIB
+e:\DEV\MSVC_Projects\disasm_exe\VS2005\pe_disasm\libs\KERNEL32.LIB
+e:\DEV\MSVC_Projects\disasm_exe\VS2005\pe_disasm\libs\USER32.LIB
+e:\DEV\MSVC_Projects\disasm_exe\VS2005\pe_disasm\libs\WINMM.lib
+e:\DEV\MSVC_Projects\disasm_exe\VS2005\pe_disasm\libs\WINSPOOL.LIB
+e:\DEV\MSVC_Projects\disasm_exe\VS2005\pe_disasm\res\moto.obj
+
+/SUBSYSTEM:WINDOWS
+/OUT:test.exe
